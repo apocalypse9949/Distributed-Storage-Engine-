@@ -17,7 +17,7 @@ COPY . .
 # Build the Go application
 # The CGO_ENABLED=0 flag disables cgo, which makes the binary statically linked
 # This is useful for creating small, self-contained Docker images
-RUN CGO_ENABLED=0 go build -o /palantir cmd/palantir/main.go
+RUN CGO_ENABLED=0 go build -o /distributed-storage-engine cmd/distributed-storage-engine/main.go
 
 # Use a minimal Alpine Linux image for the final stage
 # This creates a very small final image, as it only contains the compiled binary
@@ -27,11 +27,11 @@ FROM alpine:latest
 WORKDIR /root/
 
 # Copy the compiled binary from the builder stage
-COPY --from=builder /palantir .
+COPY --from=builder /distributed-storage-engine .
 
 # Expose any necessary ports (e.g., for gRPC or HTTP)
 # We will add actual ports later when we implement the API
 EXPOSE 50051
 
 # Command to run the executable
-CMD ["./palantir"]
+CMD ["./distributed-storage-engine"]

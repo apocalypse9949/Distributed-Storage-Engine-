@@ -1,4 +1,4 @@
-module github.com/gemini-cli/palantir
+module github.com/gemini-cli/distributed-storage-engine
 
 go 1.24.5
 

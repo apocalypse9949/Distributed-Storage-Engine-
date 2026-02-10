@@ -8,19 +8,19 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/gemini-cli/palantir/api"
-	"github.com/gemini-cli/palantir/internal/server"
-	"github.com/gemini-cli/palantir/internal/storage"
+	"github.com/gemini-cli/distributed-storage-engine/api"
+	"github.com/gemini-cli/distributed-storage-engine/internal/server"
+	"github.com/gemini-cli/distributed-storage-engine/internal/storage"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )
 
 func main() {
-	fmt.Println("Starting Palantir gRPC Server...")
+	fmt.Println("Starting Distributed Storage Engine gRPC Server...")
 
 	// Create a new BadgerStorage instance
 	// TODO: Make the storage path configurable
-	s, err := storage.NewBadgerStorage("C:\\Users\\saipr\\AppData\\Local\\Temp\\palantir_storage")
+	s, err := storage.NewBadgerStorage("C:\\Users\\saipr\\AppData\\Local\\Temp\\distributed_storage_engine_storage")
 	if err != nil {
 		log.Fatalf("Failed to create storage: %v", err)
 	}

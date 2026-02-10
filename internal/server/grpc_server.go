@@ -3,8 +3,8 @@ package server
 import (
 	"context"
 
-	"github.com/gemini-cli/palantir/api"
-	"github.com/gemini-cli/palantir/internal/storage"
+	"github.com/gemini-cli/distributed-storage-engine/api"
+	"github.com/gemini-cli/distributed-storage-engine/internal/storage"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

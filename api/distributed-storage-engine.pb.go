@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v6.33.5
-// source: palantir.proto
+// source: distributed-storage-engine.proto
 
-package api
+package distributed_storage_engine
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -30,7 +30,7 @@ type GetRequest struct {
 
 func (x *GetRequest) Reset() {
 	*x = GetRequest{}
-	mi := &file_palantir_proto_msgTypes[0]
+	mi := &file_distributed_storage_engine_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -42,7 +42,7 @@ func (x *GetRequest) String() string {
 func (*GetRequest) ProtoMessage() {}
 
 func (x *GetRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_palantir_proto_msgTypes[0]
+	mi := &file_distributed_storage_engine_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -55,7 +55,7 @@ func (x *GetRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetRequest.ProtoReflect.Descriptor instead.
 func (*GetRequest) Descriptor() ([]byte, []int) {
-	return file_palantir_proto_rawDescGZIP(), []int{0}
+	return file_distributed_storage_engine_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *GetRequest) GetKey() []byte {
@@ -74,7 +74,7 @@ type GetResponse struct {
 
 func (x *GetResponse) Reset() {
 	*x = GetResponse{}
-	mi := &file_palantir_proto_msgTypes[1]
+	mi := &file_distributed_storage_engine_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -86,7 +86,7 @@ func (x *GetResponse) String() string {
 func (*GetResponse) ProtoMessage() {}
 
 func (x *GetResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_palantir_proto_msgTypes[1]
+	mi := &file_distributed_storage_engine_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -99,7 +99,7 @@ func (x *GetResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetResponse.ProtoReflect.Descriptor instead.
 func (*GetResponse) Descriptor() ([]byte, []int) {
-	return file_palantir_proto_rawDescGZIP(), []int{1}
+	return file_distributed_storage_engine_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *GetResponse) GetValue() []byte {
@@ -119,7 +119,7 @@ type SetRequest struct {
 
 func (x *SetRequest) Reset() {
 	*x = SetRequest{}
-	mi := &file_palantir_proto_msgTypes[2]
+	mi := &file_distributed_storage_engine_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -131,7 +131,7 @@ func (x *SetRequest) String() string {
 func (*SetRequest) ProtoMessage() {}
 
 func (x *SetRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_palantir_proto_msgTypes[2]
+	mi := &file_distributed_storage_engine_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -144,7 +144,7 @@ func (x *SetRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetRequest.ProtoReflect.Descriptor instead.
 func (*SetRequest) Descriptor() ([]byte, []int) {
-	return file_palantir_proto_rawDescGZIP(), []int{2}
+	return file_distributed_storage_engine_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *SetRequest) GetKey() []byte {
@@ -169,7 +169,7 @@ type SetResponse struct {
 
 func (x *SetResponse) Reset() {
 	*x = SetResponse{}
-	mi := &file_palantir_proto_msgTypes[3]
+	mi := &file_distributed_storage_engine_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -181,7 +181,7 @@ func (x *SetResponse) String() string {
 func (*SetResponse) ProtoMessage() {}
 
 func (x *SetResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_palantir_proto_msgTypes[3]
+	mi := &file_distributed_storage_engine_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -194,7 +194,7 @@ func (x *SetResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetResponse.ProtoReflect.Descriptor instead.
 func (*SetResponse) Descriptor() ([]byte, []int) {
-	return file_palantir_proto_rawDescGZIP(), []int{3}
+	return file_distributed_storage_engine_proto_rawDescGZIP(), []int{3}
 }
 
 type DeleteRequest struct {
@@ -206,7 +206,7 @@ type DeleteRequest struct {
 
 func (x *DeleteRequest) Reset() {
 	*x = DeleteRequest{}
-	mi := &file_palantir_proto_msgTypes[4]
+	mi := &file_distributed_storage_engine_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -218,7 +218,7 @@ func (x *DeleteRequest) String() string {
 func (*DeleteRequest) ProtoMessage() {}
 
 func (x *DeleteRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_palantir_proto_msgTypes[4]
+	mi := &file_distributed_storage_engine_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -231,7 +231,7 @@ func (x *DeleteRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteRequest.ProtoReflect.Descriptor instead.
 func (*DeleteRequest) Descriptor() ([]byte, []int) {
-	return file_palantir_proto_rawDescGZIP(), []int{4}
+	return file_distributed_storage_engine_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *DeleteRequest) GetKey() []byte {
@@ -249,7 +249,7 @@ type DeleteResponse struct {
 
 func (x *DeleteResponse) Reset() {
 	*x = DeleteResponse{}
-	mi := &file_palantir_proto_msgTypes[5]
+	mi := &file_distributed_storage_engine_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -261,7 +261,7 @@ func (x *DeleteResponse) String() string {
 func (*DeleteResponse) ProtoMessage() {}
 
 func (x *DeleteResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_palantir_proto_msgTypes[5]
+	mi := &file_distributed_storage_engine_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -274,14 +274,14 @@ func (x *DeleteResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteResponse.ProtoReflect.Descriptor instead.
 func (*DeleteResponse) Descriptor() ([]byte, []int) {
-	return file_palantir_proto_rawDescGZIP(), []int{5}
+	return file_distributed_storage_engine_proto_rawDescGZIP(), []int{5}
 }
 
-var File_palantir_proto protoreflect.FileDescriptor
+var File_distributed_storage_engine_proto protoreflect.FileDescriptor
 
-const file_palantir_proto_rawDesc = "" +
+const file_distributed_storage_engine_proto_rawDesc = "" +
 	"\n" +
-	"\x0epalantir.proto\x12\x03api\"\x1e\n" +
+	" distributed-storage-engine.proto\x12\x03api\"\x1e\n" +
 	"\n" +
 	"GetRequest\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\fR\x03key\"#\n" +
@@ -294,26 +294,26 @@ const file_palantir_proto_rawDesc = "" +
 	"\vSetResponse\"!\n" +
 	"\rDeleteRequest\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\fR\x03key\"\x10\n" +
-	"\x0eDeleteResponse2\x91\x01\n" +
-	"\bPalantir\x12(\n" +
+	"\x0eDeleteResponse2\xa1\x01\n" +
+	"\x18DistributedStorageEngine\x12(\n" +
 	"\x03Get\x12\x0f.api.GetRequest\x1a\x10.api.GetResponse\x12(\n" +
 	"\x03Set\x12\x0f.api.SetRequest\x1a\x10.api.SetResponse\x121\n" +
-	"\x06Delete\x12\x12.api.DeleteRequest\x1a\x13.api.DeleteResponseB\bZ\x06./;apib\x06proto3"
+	"\x06Delete\x12\x12.api.DeleteRequest\x1a\x13.api.DeleteResponseB\x1fZ\x1d./;distributed_storage_engineb\x06proto3"
 
 var (
-	file_palantir_proto_rawDescOnce sync.Once
-	file_palantir_proto_rawDescData []byte
+	file_distributed_storage_engine_proto_rawDescOnce sync.Once
+	file_distributed_storage_engine_proto_rawDescData []byte
 )
 
-func file_palantir_proto_rawDescGZIP() []byte {
-	file_palantir_proto_rawDescOnce.Do(func() {
-		file_palantir_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_palantir_proto_rawDesc), len(file_palantir_proto_rawDesc)))
+func file_distributed_storage_engine_proto_rawDescGZIP() []byte {
+	file_distributed_storage_engine_proto_rawDescOnce.Do(func() {
+		file_distributed_storage_engine_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_distributed_storage_engine_proto_rawDesc), len(file_distributed_storage_engine_proto_rawDesc)))
 	})
-	return file_palantir_proto_rawDescData
+	return file_distributed_storage_engine_proto_rawDescData
 }
 
-var file_palantir_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_palantir_proto_goTypes = []any{
+var file_distributed_storage_engine_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_distributed_storage_engine_proto_goTypes = []any{
 	(*GetRequest)(nil),     // 0: api.GetRequest
 	(*GetResponse)(nil),    // 1: api.GetResponse
 	(*SetRequest)(nil),     // 2: api.SetRequest
@@ -321,13 +321,13 @@ var file_palantir_proto_goTypes = []any{
 	(*DeleteRequest)(nil),  // 4: api.DeleteRequest
 	(*DeleteResponse)(nil), // 5: api.DeleteResponse
 }
-var file_palantir_proto_depIdxs = []int32{
-	0, // 0: api.Palantir.Get:input_type -> api.GetRequest
-	2, // 1: api.Palantir.Set:input_type -> api.SetRequest
-	4, // 2: api.Palantir.Delete:input_type -> api.DeleteRequest
-	1, // 3: api.Palantir.Get:output_type -> api.GetResponse
-	3, // 4: api.Palantir.Set:output_type -> api.SetResponse
-	5, // 5: api.Palantir.Delete:output_type -> api.DeleteResponse
+var file_distributed_storage_engine_proto_depIdxs = []int32{
+	0, // 0: api.DistributedStorageEngine.Get:input_type -> api.GetRequest
+	2, // 1: api.DistributedStorageEngine.Set:input_type -> api.SetRequest
+	4, // 2: api.DistributedStorageEngine.Delete:input_type -> api.DeleteRequest
+	1, // 3: api.DistributedStorageEngine.Get:output_type -> api.GetResponse
+	3, // 4: api.DistributedStorageEngine.Set:output_type -> api.SetResponse
+	5, // 5: api.DistributedStorageEngine.Delete:output_type -> api.DeleteResponse
 	3, // [3:6] is the sub-list for method output_type
 	0, // [0:3] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -335,26 +335,26 @@ var file_palantir_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_palantir_proto_init() }
-func file_palantir_proto_init() {
-	if File_palantir_proto != nil {
+func init() { file_distributed_storage_engine_proto_init() }
+func file_distributed_storage_engine_proto_init() {
+	if File_distributed_storage_engine_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_palantir_proto_rawDesc), len(file_palantir_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_distributed_storage_engine_proto_rawDesc), len(file_distributed_storage_engine_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_palantir_proto_goTypes,
-		DependencyIndexes: file_palantir_proto_depIdxs,
-		MessageInfos:      file_palantir_proto_msgTypes,
+		GoTypes:           file_distributed_storage_engine_proto_goTypes,
+		DependencyIndexes: file_distributed_storage_engine_proto_depIdxs,
+		MessageInfos:      file_distributed_storage_engine_proto_msgTypes,
 	}.Build()
-	File_palantir_proto = out.File
-	file_palantir_proto_goTypes = nil
-	file_palantir_proto_depIdxs = nil
+	File_distributed_storage_engine_proto = out.File
+	file_distributed_storage_engine_proto_goTypes = nil
+	file_distributed_storage_engine_proto_depIdxs = nil
 }

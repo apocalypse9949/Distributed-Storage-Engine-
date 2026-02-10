@@ -1,6 +1,6 @@
 package routing
 
-import "github.com/gemini-cli/palantir/internal/cluster"
+import "github.com/gemini-cli/distributed-storage-engine/internal/cluster"
 
 // QueryRouter is the interface for the query router.
 type QueryRouter interface {
