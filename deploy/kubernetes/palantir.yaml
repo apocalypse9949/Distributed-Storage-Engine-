@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: palantir
+  labels:
+    app: palantir
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: palantir
+  template:
+    metadata:
+      labels:
+        app: palantir
+    spec:
+      containers:
+      - name: palantir
+        image: palantir-image:latest # This image should be built locally or pushed to a registry
+        ports:
+        - containerPort: 50051
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: palantir
+  labels:
+    app: palantir
+spec:
+  selector:
+    app: palantir
+  ports:
+    - protocol: TCP
+      port: 50051
+      targetPort: 50051
+  type: LoadBalancer # Use NodePort or ClusterIP for internal access, LoadBalancer for external access
