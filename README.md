@@ -102,10 +102,3 @@ Ensure you have the following tools installed and configured on your system:
 
 Detailed instructions for benchmarking the deployed Distributed Storage Engine can be found in the `benchmark_instructions.md` file within this repository. This guide includes steps for verifying deployment, obtaining service access points, and suggestions for gRPC benchmarking tools like `ghz`.
 
-## Future Enhancements
-
-*   Implementation of actual clustering logic.
-*   Advanced data replication strategies for high availability and fault tolerance.
-*   Dynamic routing capabilities.
-*   Integration with metrics and monitoring systems (e.g., Prometheus, Grafana).
-*   Authentication and Authorization for the gRPC API.
